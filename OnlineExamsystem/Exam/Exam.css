@@ -9,7 +9,7 @@
   height: 10px;
   width: 10px;
   text-align: left;
-  vertical-align: middle;
+  vertical-align: top;
 
 }
 
@@ -20,7 +20,7 @@
   text-align: center;
   /* row-gap: 10px; */
   gap: 10px;
-  
+ 
   }
   .first-row-1{
     box-shadow: 10px 10px 10px rgba(0,0,0,0.15);
