@@ -4,7 +4,7 @@
 }
 .header{
 
-    grid-column: 1 / 4;
+    grid-column: 1 / 5;
     background-color: rgb(239, 116, 239);
     height: 33%;
     display: flex;
@@ -81,9 +81,10 @@
 }
 #wrapper{
   display: grid;
-  grid-template-columns: 25% 50%;
+  grid-template-columns: 16% 40%;
   grid-template-rows: 200px 400px;
   grid-gap: 5px;
+  height: 100%;
 
 }
 .menu{
@@ -94,18 +95,20 @@ margin-top: -139px;
 }
 .main{
   grid-row-start: 2;
-  grid-row-end: 5;
+  grid-row-end: 4;
   grid-column-start: 2;
-  grid-column-end: 4;
+  grid-column-end:4;
   display: grid;
   grid-template-rows:1fr 1fr 1fr;
   margin-top: -100px;
-  row-gap: 5px;
-  
+  margin-left: 40px;
+  gap:10px ;
+  margin-right: 50px;
 }
 
 .footer{
   grid-column-start:1;
   grid-column-end: 4;
   background-color: darkgrey;
+  height: 200%;
 }

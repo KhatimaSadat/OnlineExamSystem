@@ -98,7 +98,7 @@ margin-top: -139px;
   grid-column-start: 2;
   grid-column-end: 4;
   display: grid;
-  grid-template-rows:1fr 1fr 1fr;
+ 
   margin-top: -100px;
   row-gap: 5px;
   
