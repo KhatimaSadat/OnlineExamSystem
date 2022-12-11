@@ -2,279 +2,263 @@
     margin: 0px;
     padding: 0px;
 }
-
-    grid-column: 1 / 4;
-    background-color: rgb(239, 116, 239);
-    height: 33%;
+body{
+    display: grid;
+    grid-template-columns: 15% 60% 25%;
+    grid-template-rows: 9.5vh  90vh 40vh;
+}
+nav{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    background-color: rgba(116, 74, 235, 1);
+    /* position: fixed;
+    left: 0px;
+    right: 0px; */
+    position: fixed;
+    width: 100%;
+    grid-column: 1/ 5;
+    z-index: 101;
+}
+nav .left  {
     display: flex;
-    flex-direction: row;
-  
-  }
-  .profile-info{
-  display: flex;
-  flex-direction: row;
-  padding-left: 10px;
-  padding-top: 2px;
-  width: 30%;
-  }
-  .profile-info img{
-  height: 60px;
-  width: 60px;
-  border-radius: 100px;
-  cursor: pointer;
-  
-  }
-  .text{
-  padding-top: 0px;
-  line-height: 30px;
-  padding-left:8px ;
-  }
-  .text h4{
-  color: #EEEEEE;
-  }
-  .text p{
-  color: #EEEEEE;
-  }
-  .search{
-  height: 30px;
-  border-radius: 20px;
-  width: 30%;
-  margin: 10px 0px 0px 10px;
-  border: none;
-  outline: none;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
-  background-color: rgba(217, 217, 217, 1);
+   padding-left: 20px;
+    
+}
+nav .left img{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+}
+nav .left div{
+    line-height: 30px;
+    margin-left:7px ;
+    color: white;
+}
+nav .left div h3{
+    margin: 0px;
+}
+nav .center input{
+    padding: 10px;
+    border-radius: 50px;
+    width: 90%;
+    margin: 10px 0px 0px 10px;
+    border: none;
+    outline: none;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+    background-color: rgba(217, 217, 217, 1);
 
 }
-
 nav .right {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-
-nav .right a {
-  text-decoration: none;
-  margin: 10px;
-  text-align: center;
-  width: fit-content;
-  height: fit-content;
-  padding: 10px;
-
-}
-
-nav a:hover {
-  background-color: rgba(217, 217, 217, 1);
-  border-radius: 30px;
+nav .right a{
+    text-decoration: none;
+    margin: 10px ;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
 
 }
-
-aside {
-  display: flex;
-  flex-direction: column;
-  background-color: rgba(71, 30, 186, 1);
-  grid-row-start: 2;
-  grid-row-end: 4;
-
-
+nav a:hover{
+    background-color: rgba(217, 217, 217, 1);
+    border-radius: 30px;
 
 }
+aside{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(71, 30, 186, 1);
+    grid-row-start: 2;
+    grid-row-end: 4;
+    
 
-aside ul {
-
-  color: white;
-  list-style: disc;
-  list-style-position: inside;
-  margin: 0;
-  /* padding-left: 5px; */
-  width: 100%;
-
-
+    
 }
-
-aside ul li {
-
-  margin: 5px 0px;
-  padding: 5px;
-
+aside ul{
+    
+    color: white;
+    list-style: disc;
+    list-style-position: inside;
+    margin: 0;
+    /* padding-left: 5px; */
+    width: 100%;
+    
+   
 }
-
-aside ul li:hover {
-  background-color: white;
-  color: rgba(71, 30, 186, 1);
+aside ul li{
+    
+    margin:  5px 0px;
+    padding:5px;
+    
 }
-
-aside ul a {
-  text-decoration: none;
-  color: white;
-
-
-
+aside ul li:hover{
+    background-color: white;
+    color:rgba(71, 30, 186, 1) ;
 }
-
-
-main {
-  grid-column: 2 / 4;
-  grid-row: 2/3;
-  background-color: rgba(217, 217, 217, 1);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  /* padding: 5% 0; */
+aside ul a{
+    text-decoration: none;
+    color: white;  
 }
-
+main{
+    grid-column: 2 / 4;
+    grid-row: 2/3;
+    background-color: rgba(217, 217, 217, 1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* padding: 5% 0; */
+}
 main .exameResult,
 main .exameTime {
-  width: 50%;
-  padding: 10px;
-  border-radius: 10px;
-  margin: 20px;
+    width: 50%;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px;
 }
 
 main .exameTime {
 
-  background-color: rgba(71, 30, 186, 1);
-  text-align: center;
-  /* vertical-align: middle; */
+    background-color: rgba(71, 30, 186, 1);
+    text-align: center;
+    /* vertical-align: middle; */
 
-  color: white;
-  margin-top: 0px;
-  font-size: 35px;
-  padding-top: 15px;
-  padding: 15px;
+    color: white;
+    margin-top: 0px;
+    font-size: 35px;
+    padding-top: 15px;
+    padding: 15px;
 
 
 }
 
 main .text {
-  background-color: white;
-  padding: 10px;
-  width: 40%;
-  color: black;
-  margin-bottom: -15px;
-  z-index: 100;
-  text-align: center;
-  border-radius: 10px;
-  font-weight: bold;
+    background-color: white;
+    padding: 10px;
+    width: 40%;
+    color: black;
+    margin-bottom: -15px;
+    z-index: 100;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bold;
 }
 
-.exameResult {
-  background-color: white;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 0 10px;
+ .exameResult {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 10px;
 
 }
 
 .exameResult .item {
-  margin: 1% 18%;
+    margin: 1% 18%;
 }
 
 .exameResult div div {
-  display: flex;
-  flex-direction: row;
-  /* justify-content: center; */
-  align-items: center;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
 }
 
 .exameResult div div .num-correct,
 .exameResult div div .num-wrong {
-  width: 50px;
-  margin: 5px;
-  display: flex;
-  justify-content: center;
+    width: 50px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
 
 }
 
 .exameResult div div .num-correct {
-  background-color: rgba(167, 91, 244, 1);
+    background-color: rgba(167, 91, 244, 1);
 
 }
 
 .exameResult div div .num-wrong {
-  background-color: rgba(247, 152, 62, 1);
+    background-color: rgba(247, 152, 62, 1);
 }
 
 .exameResult .circle {
-
-  border-width: 12px;
-  border-style: solid;
-  border-color: rgba(167, 91, 244, 1) rgba(167, 91, 244, 1) rgba(247, 152, 62, 1) rgba(217, 217, 217, 1);
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 25px;
-  border-radius: 50%;
+    
+    border-width: 12px;
+    border-style: solid;
+    border-color:rgba(167, 91, 244, 1) rgba(167, 91, 244, 1)  rgba(247, 152, 62, 1) rgba(217, 217, 217, 1);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    border-radius: 50%;
 }
 
 .exameResult .circle p {
-  margin: 0;
+    margin: 0;
 }
-
-footer {
-  background-color: rgba(217, 217, 217, 1);
-  grid-column: 2 / 4;
-  grid-row: 3/4;
-  text-align: center;
-
+footer{
+    background-color: rgba(217, 217, 217, 1);
+    grid-column: 2 / 4;
+    grid-row: 3/4;
+    text-align: center;
+    
 }
-
-footer .top {
-  background-color: rgba(193, 174, 245, 1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px
+footer .top{
+    background-color: rgba(193, 174, 245, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px
+} 
+footer .top input{
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    margin-left: 2%;
 }
-
-footer .top input {
-  padding: 10px;
-  border: none;
-  outline: none;
-  border-radius: 30px;
-  margin-left: 2%;
-}
-
-footer .down ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  list-style: none;
-  margin: 4% 30% 2% 30%;
+footer .down ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    margin: 4% 30% 2% 30%;
 
 }
-
-footer .down ul li a {
-  text-decoration: none;
-  font-weight: bold;
-  color: black;
+footer .down ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
 }
-
-footer .down ul li a:hover {
-  text-decoration: underline;
+footer .down ul li a:hover{
+    text-decoration: underline;
 }
-
-footer .down .pic {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+footer .down .pic{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
-
-footer .down .pic img {
-  width: 30px;
-  height: 30px;
-  border-radius: 52%;
-  margin: 0 10px;
+footer .down .pic img{
+    width: 30px;
+    height: 30px;
+    border-radius: 52%;
+    margin: 0 10px;
 }
-
-footer .down .pic img:hover {
-  cursor: pointer;
+footer .down .pic img:hover{
+    cursor: pointer;
 
 }
+footer p{
+   margin-top: 2%;
+}
 
-footer p {
-  margin-top: 2%;
+.footer{
+  grid-column-start:1;
+  grid-column-end: 4;
+  background-color: darkgrey;
 }
