@@ -96,12 +96,16 @@
   height: 100%;
 
 }
-.menu{
+/* .menu{
   grid-row-start: 2;
-  grid-row-end: 5;
-  background-color: lightcoral;
-margin-top: -143px;
-}
+  grid-row-end: 4;
+
+
+
+background-color: rgba(71, 30, 186, 1);
+
+
+} */
 .main{
   grid-row-start: 2;
   grid-row-end: 4;
@@ -119,5 +123,98 @@ margin-top: -143px;
   grid-column-start:1;
   grid-column-end: 4;
   background-color: darkgrey;
-  height: 200%;
+  height: 500%;
+}
+/* .menu {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(71, 30, 186, 1);
+  grid-row-start: 2;
+  grid-row-end: 4;
+  margin-top: -143px;
+
+}
+
+.menu ul {
+
+  color: white;
+ 
+  margin: 0;
+  width: 100%;
+  display: flex;
+flex: 1fr;
+flex-direction:column;
+
+
+}
+
+.menu ul li {
+
+  margin: 5px 0px;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+
+}
+
+.menu ul li a:hover {
+  background-color: white;
+  color: rgba(71, 30, 186, 1);
+}
+
+.menu ul li a {
+  /* text-decoration: none; */
+  /* color: white; */
+
+
+
+/* } */ 
+
+li{
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+aside {
+  
+  flex-direction: column;
+  background-color: rgba(71, 30, 186, 1);
+  grid-row-start: 2;
+  grid-row-end: 4;
+  margin-top: -143px;
+
+
+}
+
+aside ul {
+display: inline;
+display: absolute;
+  color: white;
+  list-style: disc;
+  list-style-position: inside;
+  margin: 10px 0px 0px 0px;
+  /* padding-left: 5px; */
+  width: 100%;
+  height: 30%;
+
+
+}
+
+aside ul li {
+
+  margin:0px;
+  /* padding: 10px; */
+  padding: 5px 0px 5px 10px;
+}
+
+aside ul li:hover {
+  background-color: white;
+  color: rgba(71, 30, 186, 1);
+}
+
+aside ul a {
+  text-decoration: none;
+  color: white;
+
+
+
 }

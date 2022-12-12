@@ -1,23 +1,15 @@
 function hovera(){
  document.getElementById("first-row-a").style.boxShadow="1px 1px 10px rgba(116, 74, 235, 1)";
             }
-//  document.getElementById("b").style.boxShadow="1px 1px 10px rgba(116, 74, 235, 1)";
 
-//  document.getElementById("c").style.boxShadow="1px 1px 10px rgba(116, 74, 235, 1)";
-
-//  document.getElementById("first-row-a").style.boxShadow="1px 1px 10px rgba(116, 74, 235, 1)";
 
 function unhovera(){
  
   document.getElementById("first-row-a").style.boxShadow="10px 10px 10px rgba(0,0,0,0.15)";
- 
-} // document.getElementById("b").style.boxShadow="10px 10px 10px rgba(0,0,0,0.15)";
-  // document.getElementById("c").style.boxShadow="10px 10px 10px rgba(0,0,0,0.15)";
-  // document.getElementById("d").style.boxShadow="10px 10px 10px rgba(0,0,0,0.15)";
-  // document.getElementById("e").style.boxShadow="10px 10px 10px rgba(0,0,0,0.15)";
 
+}
   function hoverb(){
-    document.getElementById("b").style.boxShadow="1px 1px 10px rgba(116, 74, 235, 1)";
+    document.getElementById("b").style.boxShadow="0px 0px 10px rgba(116, 74, 235, 1)";
                }
   function unhoverb(){
        document.getElementById("b").style.boxShadow="10px 10px 10px rgba(0,0,0,0.15)";   
