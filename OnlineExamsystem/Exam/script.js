@@ -1,3 +1,23 @@
+function hoverimg1(){
+     document.getElementById("image-1").style.width="35px"
+}
+function unhoverimg1(){
+     document.getElementById("image-1").style.width="30px"
+}
+function hoverimg2(){
+     document.getElementById("image-2").style.width="35px"
+}
+function unhoverimg2(){
+     document.getElementById("image-2").style.width="30px"
+}
+function hoverimg3(){
+     document.getElementById("image-3").style.width="35px"
+}
+function unhoverimg3(){
+     document.getElementById("image-3").style.width="30px"
+}
+
+
 function hovera(){
  document.getElementById("first-row-a").style.boxShadow="1px 1px 10px rgba(116, 74, 235, 1)";
             }

@@ -78,7 +78,7 @@
     border-radius: 20px;
     color: white;
   }
-  ul li a:hover{
+  header ul li a:hover{
     background-color: aliceblue;
   color: black;
   
@@ -117,58 +117,94 @@ background-color: rgba(71, 30, 186, 1);
   margin-left: 40px;
   gap:10px ;
   margin-right: 50px;
+  
 }
 
 .footer{
   grid-column-start:1;
   grid-column-end: 4;
-  background-color: darkgrey;
-  height: 500%;
+  background-color: rgba(217, 217, 217, 1);
+  margin-top: 10px;
+  height: 100%;
 }
-/* .menu {
+
+footer .top{
+  background-color: rgba(193, 174, 245, 1);
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px
+} 
+footer .top input{
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  margin-left: 2%;
+}
+footer .down ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  margin: 4% 30% 2% 30%;
+
+}
+footer .down ul li a{
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+footer .down ul li a:hover{
+  text-decoration: underline;
+ color: rgba(71, 30, 186, 1);
+
+  
+}
+footer .down .pic{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+footer .down .pic img{
+  width: 30px;
+  height: 30px;
+  border-radius: 52%;
+  margin: 0 10px;
+}
+footer .down .pic img:hover{
+  cursor: pointer;
+
+}
+footer p{
+ margin-top: 2%;
+ text-align: center;
+}
+#last-part-of-footer{
   background-color: rgba(71, 30, 186, 1);
-  grid-row-start: 2;
-  grid-row-end: 4;
-  margin-top: -143px;
-
-}
-
-.menu ul {
-
   color: white;
- 
-  margin: 0;
-  width: 100%;
-  display: flex;
-flex: 1fr;
-flex-direction:column;
-
-
+ height: 20px;
+  /* position: relative; */
+  vertical-align: bottom;
+  
 }
+#last-part-of-footer p{}
+#last-part-of-footer a{
+  text-align: right;
+  color: white;
+  vertical-align: top;
+  margin-right: 10px;
+  margin-right: 20px;
+  margin-top: -20px;
+text-decoration: none;
+padding-top: -10px;
+  display: inline-block;
+/* position: absolute; */
+/* right: 10px; */
 
-.menu ul li {
-
-  margin: 5px 0px;
-  padding: 0px;
-  margin: 0px;
-  width: 100%;
-
+/* top: 10px; */
+/* padding: 50px;s */
 }
-
-.menu ul li a:hover {
-  background-color: white;
-  color: rgba(71, 30, 186, 1);
-}
-
-.menu ul li a {
-  /* text-decoration: none; */
-  /* color: white; */
-
-
-
-/* } */ 
 
 li{
   display: list-item;
@@ -179,7 +215,7 @@ aside {
   flex-direction: column;
   background-color: rgba(71, 30, 186, 1);
   grid-row-start: 2;
-  grid-row-end: 4;
+  grid-row-end: 5;
   margin-top: -143px;
 
 
