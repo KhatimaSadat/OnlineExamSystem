@@ -1,0 +1,31 @@
+.about {
+
+background-color: blue;
+display: flex;
+flex-direction: column;
+padding: 4.2%;
+    
+}
+.Achild .Aimg img{
+   width: 232px;
+   height: 323px ;
+   /* margin-bottom: 20px; */
+    margin: 10%;
+   
+}
+.Achild {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px;
+    border-radius: 50px;
+    align-items: center;
+    background-color:#ffffff;
+   
+
+}
+.aright {
+    
+    font-style: italic;
+    
+}
