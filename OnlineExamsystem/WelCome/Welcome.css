@@ -1,5 +1,6 @@
+
 div{
-    background-color: blueviolet;
+    
    
     width: 50%;
      height: 200px;
@@ -12,6 +13,10 @@ div{
 
 
 }
+button a{
+    background-color: white;
+    text-decoration: none;
+}
 #bt1{
 
     border-radius: 50px;
@@ -19,7 +24,7 @@ div{
     left: -70px;
     top: 60px;
     border-color: rgb(255, 255, 255);
-    padding: 10px;
+    padding: 20px;
     margin: 10px;
     background-color: white;
   
@@ -30,12 +35,12 @@ div{
     left: 50px;
     top: 60px;
     border-color: white;
-    padding: 10px;
+    padding: 20px;
     background-color: white;
 }
 
-*
+body
 {
-    background-color: blueviolet ;
+    background-color: rgba(71, 30, 186, 1); ;
     background-size: cover;
 }

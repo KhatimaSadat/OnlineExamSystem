@@ -1,31 +1,221 @@
-.about {
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    display: grid;
+    grid-template-columns: 15% 60% 25%;
+    grid-template-rows: 9.5vh  90vh 40vh;
+}
+nav{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    background-color: rgba(116, 74, 235, 1);
+    /* position: fixed;
+    left: 0px;
+    right: 0px; */
+    position: fixed;
+    width: 100%;
+    grid-column: 1/ 5;
+    z-index: 101;
+}
+nav .right {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
 
-background-color: blue;
-display: flex;
-flex-direction: column;
-padding: 4.2%;
+nav .right a {
+    text-decoration: none;
+    margin: 10px;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    color: white;
+
+}
+
+nav a:hover {
+    background-color: white;
+    border-radius: 30px;
+    color: black;
+
+}
+nav .left  {
+    display: flex;
+   padding-left: 20px;
     
 }
-.Achild .Aimg img{
-   width: 232px;
-   height: 323px ;
-   /* margin-bottom: 20px; */
-    margin: 10%;
+nav .left img{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+}
+nav .left div{
+    line-height: 30px;
+    margin-left:7px ;
+    color: white;
+}
+nav .left div h3{
+    margin: 0px;
+}
+nav .center input{
+    padding: 10px;
+    border-radius: 50px;
+    width: 90%;
+    margin: 10px 0px 0px 10px;
+    border: none;
+    outline: none;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+    background-color: rgba(217, 217, 217, 1);
+
+}
+nav .right {
+    display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+nav .right a{
+    text-decoration: none;
+    margin: 10px ;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+
+}
+nav a:hover{
+    background-color: rgba(217, 217, 217, 1);
+    border-radius: 30px;
+
+}
+aside{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(71, 30, 186, 1);
+    grid-row-start: 2;
+    grid-row-end: 4;
+    
+
+    
+}
+aside ul{
+    
+    color: white;
+    list-style: disc;
+    list-style-position: inside;
+    margin: 0;
+    /* padding-left: 5px; */
+    width: 100%;
+    
    
 }
-.Achild {
+aside ul li{
+    
+    margin:  5px 0px;
+    padding:5px;
+    
+}
+aside ul li:hover{
+    background-color: white;
+    color:rgba(71, 30, 186, 1) ;
+}
+aside ul a{
+    text-decoration: none;
+    color: white;  
+}
+main{
+    grid-column: 2 / 4;
+    grid-row: 2/3;
+    background-color: rgba(217, 217, 217, 1);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        /* padding: 5% 0; */
+}
+main .Achild{
+    display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 50px;
+        border-radius: 50px;
+        align-items: center;
+        background-color: #ffffff;
+}
+main .Achild .Aimg img {
+    width: 232px;
+    height: 323px;
+    /* margin-bottom: 20px; */
+    margin: 10%;
+
+}
+footer {
+    background-color: rgba(217, 217, 217, 1);
+    grid-column: 2 / 4;
+    grid-row: 3/4;
+    text-align: center;
+
+}
+
+footer .top {
+    background-color: rgba(193, 174, 245, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px
+}
+
+footer .top input {
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    margin-left: 2%;
+}
+
+footer .down ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 50px;
-    border-radius: 50px;
-    align-items: center;
-    background-color:#ffffff;
-   
+    list-style: none;
+    margin: 4% 30% 2% 30%;
 
 }
-.aright {
-    
-    font-style: italic;
-    
+
+footer .down ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+footer .down ul li a:hover {
+    text-decoration: underline;
+}
+
+footer .down .pic {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer .down .pic img {
+    width: 30px;
+    height: 30px;
+    border-radius: 52%;
+    margin: 0 10px;
+}
+
+footer .down .pic img:hover {
+    cursor: pointer;
+
+}
+
+footer p {
+    margin-top: 2%;
+}
+
+.footer {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: darkgrey;
 }

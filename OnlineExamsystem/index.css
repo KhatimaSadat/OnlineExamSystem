@@ -59,11 +59,13 @@ nav .right a{
     width: fit-content;
     height: fit-content;
     padding: 10px;
+    color: white;
 
 }
 nav a:hover{
-    background-color: rgba(217, 217, 217, 1);
+    background-color: white;
     border-radius: 30px;
+    color: black;
 
 }
 aside{

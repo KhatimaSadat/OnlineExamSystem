@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta  name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Document</title>
+    <link rel="stylesheet" href="Login.css">
+</head>
+<body onload="wlc()">
+   
+        <div class="first_div">
+            <form action="" class="first_form" id="first_form" onsubmit=" return preventSubmit()" >
+                <legend>Login</legend>
+                <input type="email" placeholder="Email address" class="f_e" id="email">
+                <input type="password" placeholder="Password" class="f_p" id="password" size="8" maxlength="8">
+                <a href="google.com" id="last">Forgot Password?</a>
+                <div ><p id="last">Dont have acount? </p> <p style="color:rgb(68, 0, 255) ; cursor: pointer;  "  onclick='handleRegister()' id="last">Register</p></div>
+                <button class="f_button" type="submit" >Login</button>
+            </form>
+        </div>
+        <div class="secound_div">
+              <form action="" class="secound_form" id="secound_form" onsubmit=" return preventSubmitR() ">
+                <legend>Register</legend>
+                <div id="fff">
+                <input type="text" placeholder="First name" id="Remail" required>
+                <input type="text" placeholder="last name" class="s_e" id="RlastName" required>
+                <input type="date" placeholder="Date of birth" id="date">
+                <input type="text" placeholder="fields" class="s_p" >
+                <input type="tel" name="" id="tel" placeholder="Contact Number" required >
+                </div>
+                <input type="text" placeholder="Email address" required>
+                <input type="password" placeholder="Password" id="Rpassword" required size="8" maxlength="8">
+                <div><p id="lastt">Already have account? </p> <p style="color:rgb(68, 0, 255) ; cursor: pointer;  "  onclick='handleRegister()' id="lastt">Login</p></div>
+                <button class="s_button" type="submit" >Register</button>
+                 
+             </form>
+
+        </div>
+    
+    <script src="Login.js"></script>
+</body>
+</html>
