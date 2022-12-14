@@ -94,8 +94,7 @@ aside{
     background-color: rgba(71, 30, 186, 1);
     grid-row-start: 2;
     grid-row-end: 4;
-    
-
+margin-top: 5px;
     
 }
 aside ul{
