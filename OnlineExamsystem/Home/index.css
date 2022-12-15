@@ -21,21 +21,30 @@ nav{
 }
 nav .left  {
     display: flex;
-   padding-left: 20px;
+    flex-direction: column;
+   padding-left: 7%;
     
 }
-nav .left img{
+nav .left .left1 {
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+}
+nav .left .left1 img{
     width: 60px;
     height: 60px;
     border-radius: 30px;
 }
-nav .left div{
+nav .left .left1 div{
     line-height: 30px;
     margin-left:7px ;
     color: white;
 }
-nav .left div h3{
+nav .left .left1 div h3{
     margin: 0px;
+}
+nav .left .left2{
+    display: none;
 }
 nav .center input{
     padding: 10px;
@@ -47,6 +56,22 @@ nav .center input{
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
     background-color: rgba(217, 217, 217, 1);
 
+}
+nav .humbarger{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+nav .humbarger .bar{
+    height: 3px;
+    width: 40px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 7%;
 }
 nav .right {
     display: grid;
@@ -78,7 +103,7 @@ aside{
 
     
 }
-aside ul{
+aside ul , nav .left .left2 ul{
     
     color: white;
     list-style: disc;
@@ -89,17 +114,17 @@ aside ul{
     
    
 }
-aside ul li{
+aside ul li ,nav .left .left2 ul li{
     
     margin:  5px 0px;
     padding:5px;
     
 }
-aside ul li:hover{
+aside ul li:hover , nav .left .left2 ul li:hover{
     background-color: white;
     color:rgba(71, 30, 186, 1) ;
 }
-aside ul a{
+aside ul a , nav .left .left2 ul a{
     text-decoration: none;
     color: white;  
 }
@@ -263,4 +288,59 @@ footer p{
   grid-column-start:1;
   grid-column-end: 4;
   background-color: darkgrey;
+}
+@media (max-width : 950px) {
+    nav .right {
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: none;
+        margin-top: 30px;
+        margin-left: 55%;
+        margin-right: 1%;
+        display: none;
+        
+    }
+    nav .right a{
+        display: block;
+    }
+    nav .right a:hover{
+        border-radius: 0px;
+
+    }
+    nav .left .left2.active{
+        display: flex;
+    }
+    nav .humbarger {
+        display: flex;
+    }
+    nav .humbarger:hover{
+        cursor: pointer;
+    }
+    nav .right.active{
+        display: grid;
+    }
+    aside{
+        display: none;
+    }
+    main{
+        
+        grid-column:1/4 ;
+    }
+    main .exameResult{
+        width: 80%;
+    }
+    footer{
+        grid-column: 1/4;
+        
+    }
+    footer .down ul {
+       
+    margin: 4% 30% 2% 20%;
+    }
+    footer .down ul li {
+        padding: 5%;
+        display: block;
+       
+    }
+    
+    
 }
