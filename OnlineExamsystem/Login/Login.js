@@ -35,7 +35,7 @@ function handleRegister (){
             }
             function RedirectToHome(){
                  
-                 window.location.href = "../index.html";
+                 window.location.href = "../Home/index.html";
                 
             }
             function preventSubmitR(){
