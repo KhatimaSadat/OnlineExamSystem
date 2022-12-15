@@ -513,6 +513,6 @@ grid-template-columns: auto auto auto;
 footer .down .pic{
   display: flex;
   flex-direction: row;
-  justify-content: left;
+  justify-content: ;
 }
 }
